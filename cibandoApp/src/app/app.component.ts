@@ -7,7 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cibandoApp';
+  pippo = false;
 
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  evidenziato = false;
+
+  onEvidenziato() {
+    this.evidenziato = !this.evidenziato
+  }
 
 }
