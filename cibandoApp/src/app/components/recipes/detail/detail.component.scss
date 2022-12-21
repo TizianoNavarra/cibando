@@ -6,7 +6,35 @@
   background-position: center;
 }
 
+.row-diffiulty {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.row-date {
+  font-size: 13px;
+  margin-top: 30px;
+  margin-left: 10px;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
 .stelline {
   width: 150px;
+}
 
+.title-summary {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.col-auto {
+  margin-top: -10px;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
 }

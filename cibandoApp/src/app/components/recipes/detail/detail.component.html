@@ -4,12 +4,11 @@
     <h2 class="title-summary">{{ ricetta.title }}</h2>
     <div class="col-auto">{{ ricetta.description }}</div>
   </div>
-  <div class="row">
-    Difficoltà <img src="{{ percorsoStelline }}{{ricetta.difficulty}}.png" class="stelline">
+  <div class="row-diffiulty">Difficoltà: &nbsp;<img src="{{ percorsoStelline }}{{ricetta.difficulty}}.png" class="stelline">
     <!--
       Difficoltà <img [src]="percorsoStelline + ricetta.difficulty + '.png'">
       secondo metodo per caricare una foto
     -->
   </div>
-  <div class="row">Ricetta pubblicata il {{ ricetta.date }}</div>
+  <div class="row-date">Ricetta pubblicata il: {{ ricetta.date }}</div>
 </div>
