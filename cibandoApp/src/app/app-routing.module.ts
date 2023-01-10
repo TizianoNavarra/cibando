@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { RecipesComponent } from './components/recipes/recipes.component';
 import { DetailComponent } from './components/recipes/detail/detail.component';
 import { RecipesListComponent } from './components/recipes/recipes-list/recipes-list.component';
+import { RegistrationComponent } from './components/user/registration/registration.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'}, // per convienzione all'inizio si iserisce la path per ritornare alla home
@@ -14,6 +15,7 @@ const routes: Routes = [
     { path: '', pathMatch: 'full', component: RecipesListComponent},
     { path: 'dettaglio/:title/:_id', component: DetailComponent} // _id è il nome della variabile (casuale)
   ]},
+  { path: 'registrazione', component: RegistrationComponent},
   {path: '**', redirectTo: 'home'} // percorso di emergenza quando una risorsa viene a mancare
 ];
 

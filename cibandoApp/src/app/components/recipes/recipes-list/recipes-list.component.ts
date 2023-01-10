@@ -11,6 +11,7 @@ export class RecipesListComponent implements OnInit{
 
   //DICHIARAZIONE DELLE VARIABILI:
   ricette: Recipe[];
+  messaggioRicevuto: string;
 
   // i servizi devono essere inseriti nel costruttore
   // le variabili dichiarate private possono essere utilizzate solo all'interno del file .ts e non in .html e .scss
@@ -28,5 +29,13 @@ export class RecipesListComponent implements OnInit{
         console.log(err)
       }
     })
+  }
+
+  riceviMsg(e: any) {
+    if(e === this.messaggioRicevuto){
+      this.messaggioRicevuto = '';
+    } else {
+      this.messaggioRicevuto = e;
+    }
   }
 }

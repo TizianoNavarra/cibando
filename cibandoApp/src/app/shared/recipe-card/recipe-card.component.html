@@ -4,11 +4,11 @@
         <div class="card-image" style="background-image: url('../../../assets/images/carousel-1.jpg');"></div>
         nel commento esempio di immagine caricata con htlm classico mentre nella riga 7 è caricata con lo stile di Angular
         -->
-        <div class="card-image" [ngStyle]="{'background-image': 'url(' + recipe.image + ')'}"></div>
+        <div class="card-image" [ngStyle]="{'background-image': 'url(' + recipe.image + ')'}" (click)="inviaMessaggio(recipe.title)"></div>
         <div class="card-body">
-          <h5 class="card-title">{{ recipe.title }}</h5>
-          <p class="card-text">{{ recipe.description }}</p>
-          <a href="#" class="btn btn-primary" routerLink="dettaglio/{{ recipe.title}}/{{ recipe._id }}">Dettaglio</a>
+          <h5 class="card-title">{{recipe.title}}</h5>
+          <p class="card-text">{{ recipe.description | slice: 0:250}}...</p>
+          <a href="#" class="btn btn-primary" routerLink="/ricette/dettaglio/{{ recipe.title}}/{{ recipe._id }}">Dettaglio</a>
         </div>
       </div>
 </div>
